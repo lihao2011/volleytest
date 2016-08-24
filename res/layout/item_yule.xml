@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#08000000"
+    android:padding="5dp" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/niv_yule_thumbnail_pic_s"
+        android:layout_width="112dp"
+        android:layout_height="84dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/iv_yule_pic" />
+
+    <TextView
+        android:id="@+id/tv_yule_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/niv_yule_thumbnail_pic_s"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="陈冠希的17位绯闻女友，最后一位付出了惨重的代价"
+        android:textColor="#99000000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/niv_yule_thumbnail_pic_s"
+        android:layout_toRightOf="@id/niv_yule_thumbnail_pic_s" >
+
+        <TextView
+            android:id="@+id/tv_yule_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="卡圈"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_yule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2016-08-24 15:33"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

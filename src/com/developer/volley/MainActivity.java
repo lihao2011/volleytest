@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
 
 					@Override
 					public void onErrorResponse(VolleyError error) {
-						Toast.makeText(getApplicationContext(), "·ÃÎÊÍøÂçÊ§°Ü...", Toast.LENGTH_SHORT).show();
+						Toast.makeText(getApplicationContext(), "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½...", Toast.LENGTH_SHORT).show();
 					}
 				});
 		mQueue.add(request);
@@ -82,6 +82,7 @@ public class MainActivity extends Activity {
 		volley_list = (ListView) findViewById(R.id.volley_list);
 		MListAdapter mListAdapter = new MListAdapter(yuleBean);
 		volley_list.setAdapter(mListAdapter);
+		mListAdapter.notifyDataSetChanged();
 
 	}
 
